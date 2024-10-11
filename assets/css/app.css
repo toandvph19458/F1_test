@@ -5681,13 +5681,11 @@ fw-7 {
 ===============================*/
 
 .news-header {
-    padding: 85px 0 85px 0;
+    margin-top: 60px;
+    padding: 0 0 85px 0;
     position: relative;
 }
 
-.news-header.makert {
-    padding: 60px 0 0 0;
-}
 
 .news-header .news-header__bg {
     position: absolute;
@@ -5732,6 +5730,7 @@ fw-7 {
 }
 
 .news-header.makert .news-header__box p {
+    margin-top: 24px;
     font-size: 20px;
     font-weight: 500;
     color: var(--black-text);
