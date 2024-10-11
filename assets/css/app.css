@@ -9740,7 +9740,7 @@ fw-7 {
 }
 
 .event .event-tags {
-    margin-top: 90px;
+    margin-top: 60px;
     padding: 20px;
 }
 
@@ -9769,6 +9769,9 @@ fw-7 {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(50px);
+}
+.event .table-fee-schedule{
+    margin-top: 60px !important;
 }
 
 .event .event-table .event-table__bg {
