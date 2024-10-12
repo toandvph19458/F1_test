@@ -455,10 +455,7 @@ $(document).ready(function () {
 				items: 1,
 			},
 			768: {
-				items: 1,
-			},
-			992: {
-				items: 1.5
+				items: 1.5,
 			}
 		}
 	});
