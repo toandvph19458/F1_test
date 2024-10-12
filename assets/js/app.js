@@ -426,8 +426,11 @@ $(document).ready(function () {
 			768: {
 				items: 2
 			},
-			992: {
-				items: 5
+			1280: {
+				items: 3
+			},
+			1440: {
+				items: 4.5
 			}
 		}
 	});
@@ -509,7 +512,7 @@ $(document).ready(function () {
 				items: 1.2,
 			},
 			768: {
-				items: 3,
+				items: 1.5,
 			},
 			992: {
 				items: 4
