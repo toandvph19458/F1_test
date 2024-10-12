@@ -135,7 +135,6 @@ $(document).ready(function () {
 	owlNewspapers.owlCarousel({
 		dots: false,
 		loop: true,
-		margin: 48,
 		stagePadding: 0,
 		smartSpeed: 3000,
 		autoplay: true,
@@ -144,14 +143,17 @@ $(document).ready(function () {
 		slideTransition: 'linear',
 		responsive: {
 			0: {
-				items: 3
+				items: 3,
+				margin: 250,
 			},
 			768: {
-				items: 5
+				items: 5,
+				margin: 300,
 			},
 			992: {
-				items: 7
-			}
+				items: 7,
+				margin: 300,
+			},
 		}
 	});
 
