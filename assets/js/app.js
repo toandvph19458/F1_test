@@ -15,6 +15,8 @@
 // :: 13.0 Slide công việc
 // :: 14.0 Active Tabs (Hướng dẫn giao dịch A-Z)
 // :: 15.0 Slide trang Home
+// :: 16.0 products__list
+
 
 
 $(document).ready(function () {
@@ -144,16 +146,20 @@ $(document).ready(function () {
 		responsive: {
 			0: {
 				items: 3,
-				margin: 250,
+				margin: 100,
 			},
 			768: {
 				items: 5,
-				margin: 300,
+				margin: 250,
 			},
 			992: {
 				items: 7,
 				margin: 300,
 			},
+			1440: {
+				items: 7,
+				margin: 50
+			}
 		}
 	});
 
@@ -725,4 +731,26 @@ $(document).ready(function () {
 
 	owlHomeSlider.trigger('next.owl.carousel');
 })
+
+//16 products__list
+// var owlNewspapers = $('.owl-carousel.products__list');
+// owlNewspapers.owlCarousel({
+// 	dots: false, 
+//     loop: false, 
+//     stagePadding: 0,
+//     smartSpeed: 300, 
+//     autoplay: false,
+//     responsive: {
+//         0: {
+//             items: 1.5, 
+//         },
+//         600: {
+//             items: 3,
+//         },
+// 		1080: {
+// 			items: 5
+// 		}
+//     }
+// });
+
 

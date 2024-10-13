@@ -459,8 +459,7 @@ fw-7 {
     background-color: #d9d9d9;
 }
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 600px) {
     .btn.btn-primary,
     .btn.btn--primary,
     .btn.btn--cta,
@@ -478,7 +477,8 @@ fw-7 {
 	:: 5.0 Layout CSS
 ===============================*/
 
-#app {}
+#app {
+}
 
 .button-fixed {
     position: fixed;
@@ -545,7 +545,7 @@ fw-7 {
     background-color: var(--black);
 }
 
-.header>.header__container {
+.header > .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -559,28 +559,28 @@ fw-7 {
     align-items: center;
 }
 
-.header__left>.header__logo {
+.header__left > .header__logo {
     display: inline-block;
     height: 38px;
     max-height: 100%;
     margin-right: 32px;
 }
 
-.header__left>.header__logo img {
+.header__left > .header__logo img {
     width: auto;
     height: 100%;
     object-fit: contain;
 }
 
-.header__nav>ul {
+.header__nav > ul {
     gap: 16px;
 }
 
-.header__nav>ul>li {
+.header__nav > ul > li {
     padding: 8px 12px;
 }
 
-.header__nav>ul>li>a {
+.header__nav > ul > li > a {
     display: inline-flex;
     gap: 6px;
     align-items: center;
@@ -588,15 +588,15 @@ fw-7 {
     text-decoration: none;
 }
 
-.header__nav>ul>li>a:hover {
+.header__nav > ul > li > a:hover {
     color: var(--primary-text);
 }
 
-.header__nav>ul>li {
+.header__nav > ul > li {
     position: relative;
 }
 
-.header__nav>ul>li:hover .nav__item-sub {
+.header__nav > ul > li:hover .nav__item-sub {
     display: block;
 }
 
@@ -622,7 +622,7 @@ fw-7 {
     background-color: transparent;
 }
 
-.header__nav .nav__item .nav__item-sub>a {
+.header__nav .nav__item .nav__item-sub > a {
     padding: 12px;
     display: flex;
     font-size: 14px;
@@ -630,7 +630,7 @@ fw-7 {
     text-decoration: none;
 }
 
-.header__nav .nav__item .nav__item-sub>a:hover {
+.header__nav .nav__item .nav__item-sub > a:hover {
     color: var(--primary-text);
 }
 
@@ -643,12 +643,12 @@ fw-7 {
     padding: 8px 12px;
 }
 
-.header__search>img {
+.header__search > img {
     width: 22px;
     height: 22px;
 }
 
-.header__right>.btn--register {
+.header__right > .btn--register {
     height: 40px;
     font-size: 14px;
     padding: 8px 24px;
@@ -658,7 +658,7 @@ fw-7 {
     background-color: var(--primary-bg) !important;
 }
 
-.header__right>.btn--login {
+.header__right > .btn--login {
     height: 40px;
     font-size: 14px;
     padding: 8px 24px;
@@ -668,34 +668,34 @@ fw-7 {
     background: #191919;
 }
 
-.header__right>.header__menu-icon {
+.header__right > .header__menu-icon {
     cursor: pointer;
     display: none;
 }
 
-.header__right>.header__menu-icon #bar {
+.header__right > .header__menu-icon #bar {
     display: block;
 }
 
-.header__right>.header__menu-icon #close {
+.header__right > .header__menu-icon #close {
     display: none;
 }
 
-.header__right>.header__menu-icon.active #bar {
+.header__right > .header__menu-icon.active #bar {
     display: none;
 }
 
-.header__right>.header__menu-icon.active #close {
+.header__right > .header__menu-icon.active #close {
     display: block;
 }
 
-.header__right>.header__hotline {
+.header__right > .header__hotline {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.header__right>.header__hotline a {
+.header__right > .header__hotline a {
     font-size: 16px;
     color: var(--white-text);
     text-decoration: none;
@@ -794,54 +794,54 @@ fw-7 {
 
     .header__nav,
     .header__search,
-    .header__right>.btn--login,
-    .header__right>.header__hotline,
-    .header__right>.btn--register {
+    .header__right > .btn--login,
+    .header__right > .header__hotline,
+    .header__right > .btn--register {
         display: none;
     }
 
-    .header__right>.header__menu-icon {
+    .header__right > .header__menu-icon {
         display: block;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
     .header__nav,
     .header__search,
-    .header__right>.btn--login,
-    .header__right>.header__hotline,
-    .header__right>.btn--register {
+    .header__right > .btn--login,
+    .header__right > .header__hotline,
+    .header__right > .btn--register {
         display: none !important;
     }
 
-    .header__right>.header__menu-icon {
+    .header__right > .header__menu-icon {
         display: block;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
     .header__nav,
     .header__search,
-    .header__right>.btn--login,
-    .header__right>.btn--register {
+    .header__right > .btn--login,
+    .header__right > .btn--register {
         display: block !important;
     }
 
-    .header__right>.header__menu-icon {
+    .header__right > .header__menu-icon {
         display: none;
     }
 
-    .header__right>.header__hotline {
+    .header__right > .header__hotline {
         display: flex !important;
     }
 }
@@ -906,15 +906,14 @@ fw-7 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
     .header__nav,
     .header__search,
-    .header__right>.btn--login,
-    .header__right>.btn--register {
+    .header__right > .btn--login,
+    .header__right > .btn--register {
         display: none;
     }
 
-    .header__right>.header__menu-icon {
+    .header__right > .header__menu-icon {
         display: block;
     }
 
@@ -950,7 +949,6 @@ fw-7 {
         padding: 40px 0;
         background-color: var(--black);
     }
-
     .social__link-icon {
         width: 24px;
         height: 24px;
@@ -964,16 +962,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 6.0 Home Page
@@ -982,126 +984,6 @@ fw-7 {
 .owl-carousel .owl-item img {
     width: auto !important;
 }
-
-/* .banner>.banner__group-1 {
-    position: absolute;
-    z-index: 9;
-    left: 0;
-    top: 0;
-}
-
-.banner>.banner__group-1>img {
-    width: auto;
-    height: auto;
-    object-fit: contain;
-}
-
-.banner>.banner__group-2 {
-    position: absolute;
-    z-index: 9;
-    right: 0;
-    top: 0;
-}
-
-.banner>.banner__group-2>img {
-    width: auto;
-    height: auto;
-    object-fit: contain;
-}
-
-.banner>.banner__container {
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.banner>.banner__container .banner__box {
-    display: inline-block;
-}
-
-.banner>.banner__container .banner__content p {
-    font-size: 50px;
-    color: var(--white-text);
-    line-height: 1.4;
-}
-
-.banner>.banner__container .banner__content h2 {
-    font-size: 53px;
-    color: var(--primary-text);
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.4;
-}
-
-.banner>.banner__container .banner__text {
-    margin-top: 36px;
-}
-
-.banner>.banner__container .banner__text p {
-    font-size: 18px;
-    color: #a6bcc1;
-    line-height: 1.4;
-    margin-bottom: 36px;
-}
-
-.banner>.banner__container .banner__text .btn--banner {
-    padding: 12px 24px;
-    color: #2e2c1c;
-    font-size: 20px;
-    font-weight: 700;
-    border-radius: 8px;
-    text-transform: uppercase;
-    background-color: var(--primary-bg) !important;
-}
-
-.banner>.banner__container .banner__text .banner__chap {
-    width: 80%;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    float: right;
-}
-
-.banner>.banner__container .banner__text .banner__chap .banner__postion {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-
-    span {
-        position: absolute;
-        font-size: 32px;
-        font-weight: 600;
-        color: var(--white-text);
-    }
-}
-
-.banner>.banner__container .banner__text .banner__chap p.year {
-    font-size: 18px !important;
-    line-height: 1.4;
-    margin-top: 16px;
-    margin-bottom: 0;
-    font-weight: 600;
-}
-
-.banner>.banner__container .banner__text .banner__chap p.text {
-    font-size: 16px;
-    color: #a6bcc1;
-    line-height: 1.4;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.banner>.banner__container .banner__phone {
-    float: right;
-} */
 
 .marquee {
     margin-top: 40px;
@@ -1167,7 +1049,6 @@ fw-7 {
     margin: 0;
 }
 
-
 .products .products__top {
     display: flex;
     flex-direction: column;
@@ -1194,10 +1075,9 @@ fw-7 {
     flex-basis: 20%;
     height: 340px;
     padding: 40px 12px;
-    position: relative;
     border-left: 1px solid rgba(0, 0, 0, 0.06);
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-    background-color: #FFF !important;
+    background-color: #fff !important;
     transition: all 0.25s;
 }
 
@@ -1216,7 +1096,6 @@ fw-7 {
     height: 90px;
     background: #ffdc00;
     box-shadow: 0px 4.5px 22.5px 0px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(47.250003814697266px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1246,7 +1125,7 @@ fw-7 {
 }
 
 .products .products__list .products__item p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
     font-weight: 400;
     color: #161616;
@@ -1305,6 +1184,12 @@ fw-7 {
 
 .method {
     margin-top: 90px;
+}
+
+.method__list-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 68px;
 }
 
 .method .method__top {
@@ -1424,7 +1309,6 @@ fw-7 {
     background-size: cover;
     background-position: bottom;
 }
-
 .invest__list-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1445,7 +1329,7 @@ fw-7 {
     align-items: center;
 }
 
-.invest .invest__list .invest__item .invest__chart canvas {
+.invest .invest__list .invest__item .invest__chart img {
     width: 160px !important;
     height: 60px !important;
 }
@@ -1511,7 +1395,6 @@ fw-7 {
 .high .high__list {
     margin-top: 60px;
 }
-
 .high__list_row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1536,6 +1419,9 @@ fw-7 {
     height: 100%;
     position: absolute;
     object-fit: cover;
+    filter: brightness(0.8);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(42px);
 }
 
 .high .high__item .high__item-box {
@@ -1671,7 +1557,7 @@ fw-7 {
 
 .newspapers .newspapers__list {
     padding-top: 40px;
-    padding-bottom: 140px;
+    padding-bottom: 120px;
 }
 
 .newspapers .newspapers__list .newspapers__item {
@@ -1687,6 +1573,26 @@ fw-7 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .method__list-row {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .newspapers .newspapers__list {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .newspapers .newspapers__list .newspapers__item {
+        width: 100%;
+        height: 34px;
+    }
+
+    .newspapers .newspapers__list .newspapers__item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
     .invest__list-row {
         display: flex;
         flex-direction: column;
@@ -1694,7 +1600,8 @@ fw-7 {
     }
 
     .banner {
-        height: 500px;
+        height: 500px !important;
+        padding-top: 133%;
         max-width: 100%;
         background-image: url('../img/home/banner-sm.png');
         background-repeat: no-repeat;
@@ -1707,66 +1614,66 @@ fw-7 {
         height: 550px;
     }
 
-    .banner>.banner__group-1 {
+    .banner > .banner__group-1 {
         width: 100%;
         height: 100%;
     }
 
-    .banner>.banner__group-2 {
+    .banner > .banner__group-2 {
         width: 100%;
         height: auto;
     }
 
-    .banner>.banner__group-1 img,
-    .banner>.banner__group-2 img {
+    .banner > .banner__group-1 img,
+    .banner > .banner__group-2 img {
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
 
-    .banner>.banner__container .banner__phone {}
+    .banner > .banner__container .banner__phone {
+    }
 
-    .banner>.banner__container .banner__phone img {
+    .banner > .banner__container .banner__phone img {
         width: 160px;
         height: auto;
     }
 
-    .banner>.banner__container .banner__content p {
+    .banner > .banner__container .banner__content p {
         font-size: 18px !important;
     }
 
-    .banner>.banner__container .banner__content h2 {
+    .banner > .banner__container .banner__content h2 {
         font-size: 20px !important;
     }
 
-    .banner>.banner__container .banner__text {
+    .banner > .banner__container .banner__text {
         margin-top: 16px;
     }
 
-    .banner>.banner__container .banner__text p {
+    .banner > .banner__container .banner__text p {
         font-size: 14px;
         margin-bottom: 16px;
     }
 
-    .banner>.banner__container .banner__text .btn--banner {
+    .banner > .banner__container .banner__text .btn--banner {
         font-size: 14px;
     }
 
-    .banner>.banner__container .banner__text .banner__chap p.year {
+    .banner > .banner__container .banner__text .banner__chap p.year {
         font-size: 14px !important;
     }
 
-    .banner>.banner__container .banner__text .banner__chap p.text {
+    .banner > .banner__container .banner__text .banner__chap p.text {
         font-size: 10px;
     }
 
-    .banner>.banner__container .banner__text .banner__chap .banner__postion {
+    .banner > .banner__container .banner__text .banner__chap .banner__postion {
         position: relative;
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
-
         span {
             font-size: 16px;
         }
@@ -1787,8 +1694,6 @@ fw-7 {
         font-size: 12px;
     }
 
-
-
     .method {
         margin-top: 48px;
     }
@@ -1802,7 +1707,9 @@ fw-7 {
     }
 
     .method .method__top p {
-        font-size: 12px;
+        font-size: 14px;
+        margin-bottom: 24px;
+
     }
 
     .method .method__list {
@@ -1810,30 +1717,27 @@ fw-7 {
     }
 
     .method .method__list .method__item {
-        padding: 12px;
-        height: 140px;
-        align-items: start;
-        justify-content: center;
+        padding: 24px;
+        height: 300px;
         border-radius: 8px;
-        margin-top: 40px;
     }
 
     .method .method__list .method__item h3 {
-        font-size: 16px;
-        width: 200px;
+        font-size: 24px;
+        font-weight: 600;
         max-width: 100%;
     }
 
     .method .method__list .method__item p {
-        font-size: 12px;
-        width: 200px;
+        font-size: 16px;
         max-width: 100%;
+        color: #706582;
     }
 
     .method .method__list .method__item .method__item-img {
         position: absolute;
-        right: -20px;
-        top: -29px;
+        right: 0px;
+        top: 0px;
         width: 136px;
         height: 136px;
     }
@@ -1848,7 +1752,9 @@ fw-7 {
         width: 100%;
         padding: 24px;
         display: flex;
-        align-items: center;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 16px;
     }
 
     .method .method__bottom a {
@@ -1859,11 +1765,12 @@ fw-7 {
         background-color: var(--cta-bg);
         border-radius: 6px;
         font-weight: 700;
-        margin-right: 16px;
     }
-
+    .method .method__bottom span {
+        text-decoration: underline;
+    }
     .method .method__bottom p {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .invest {
@@ -1871,16 +1778,16 @@ fw-7 {
     }
 
     .invest .invest__top h3 {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 8px;
     }
 
     .invest .invest__top p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .invest .invest__top a {
-        font-size: 10px;
+        font-size: 14px;
         width: 120px;
     }
 
@@ -1891,7 +1798,7 @@ fw-7 {
     }
 
     .invest .invest__list .invest__item {
-        padding: 8px;
+        padding: 24px;
         border-radius: 10px;
         background-color: transparent;
         -webkit-backdrop-filter: blur(5px);
@@ -1899,63 +1806,54 @@ fw-7 {
         box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     }
 
-    .invest .invest__list .invest__item .invest__logo {
-        width: 30px;
-        height: 30px;
-    }
-
     .invest .invest__list .invest__item .invest__logo img {
-        width: 100%;
-        height: 100%;
+        width: 60px;
+        height: 60px;
         object-fit: contain;
     }
 
-    .invest .invest__list .invest__item .invest__chart canvas {
-        width: 50px !important;
-        height: 20px !important;
+    .invest .invest__list .invest__item .invest__chart img {
+        width: 160px !important;
+        height: 50px !important;
     }
 
     .invest .invest__list .invest__item .invest__text {
-        margin-top: 12px;
+        margin-top: 20px;
         margin-bottom: 0;
     }
 
-    .invest .invest__list .invest__item .invest__text .arrow-right {
-        padding: 8px;
-    }
-
     .invest .invest__list .invest__item .invest__text .arrow-right img {
-        width: 5px;
-        height: 10px;
+        width: 7px;
+        height: 14px;
     }
 
     .invest .invest__list .invest__item .invest__text p {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .invest .invest__list .invest__item .invest__line {
-        margin: 8px 0;
+        margin: 24px 0;
     }
 
     .invest .invest__list .invest__item .invest__number p {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .high {
-        margin-top: 24px;
+        margin-top: 30px;
     }
 
     .high .high__top h3 {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 8px;
     }
 
     .high .high__top p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .high .high__top a {
-        font-size: 10px;
+        font-size: 14px;
         width: 120px;
     }
 
@@ -1985,16 +1883,16 @@ fw-7 {
     }
 
     .news-home .news-home__top h3 {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 8px;
     }
 
     .news-home .news-home__top p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .news-home .news-home__top a {
-        font-size: 10px;
+        font-size: 14px;
         width: 120px;
     }
 
@@ -2012,7 +1910,7 @@ fw-7 {
     }
 
     .newspapers {
-        padding-top: 24px;
+        padding-top: 0px;
     }
 
     .newspapers .newspapers__top h3 {
@@ -2045,7 +1943,7 @@ fw-7 {
         flex-basis: 100%;
         height: 232px;
         padding: 24px 40px;
-        background: #F5EFF9;
+        background: #f5eff9;
         border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
     }
 
@@ -2065,11 +1963,12 @@ fw-7 {
     }
 
     .products .products__list .products__item .products__item-content h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .products .products__item-read-more {
         padding-bottom: 24px;
+        display: block;
     }
 
     .high__list_row {
@@ -2094,12 +1993,20 @@ fw-7 {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+    .method__list-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    .newspapers .newspapers__list {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
     .invest__list-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
-
     .high__list_row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -2121,7 +2028,8 @@ fw-7 {
     }
 
     .banner {
-        height: 467px;
+        /* height: 467px; */
+        padding-top: 50%;
         max-width: 100%;
         background-image: url('../img/home/banner-lg.png');
         background-repeat: no-repeat;
@@ -2129,12 +2037,11 @@ fw-7 {
         background-position: center;
         position: relative;
     }
-
-    .banner>.banner__container .banner__content p {
+    .banner > .banner__container .banner__content p {
         font-size: 18px !important;
     }
 
-    .banner>.banner__container .banner__content h2 {
+    .banner > .banner__container .banner__content h2 {
         font-size: 20px !important;
     }
 
@@ -2144,7 +2051,6 @@ fw-7 {
         text-align: center;
         width: 100%;
     }
-
 
     .products .products__list .products__item p {
         font-size: 14px;
@@ -2163,7 +2069,7 @@ fw-7 {
         position: relative;
         border-left: 1px solid rgba(0, 0, 0, 0.06);
         border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-        background-color: #FFF !important;
+        background-color: #fff !important;
         transition: all 0.25s;
     }
 
@@ -2177,7 +2083,7 @@ fw-7 {
         height: 80px;
         background: #ffdc00;
         box-shadow: 0px 4.5px 22.5px 0px rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(47.250003814697266px);
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2203,8 +2109,8 @@ fw-7 {
         position: absolute;
         right: -30px;
         top: -50px;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     .method .method__list .method__item .method__item-img img {
@@ -2241,6 +2147,15 @@ fw-7 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
+    .method__list-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    .newspapers .newspapers__list {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
     .high__list_row {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -2262,7 +2177,8 @@ fw-7 {
     }
 
     .banner {
-        height: 467px;
+        /* height: 467px; */
+        padding-top: 40%;
         max-width: 100%;
         background-image: url('../img/home/banner-lg.png');
         background-repeat: no-repeat;
@@ -2270,12 +2186,11 @@ fw-7 {
         background-position: center;
         position: relative;
     }
-
-    .banner>.banner__container .banner__content p {
+    .banner > .banner__container .banner__content p {
         font-size: 18px !important;
     }
 
-    .banner>.banner__container .banner__content h2 {
+    .banner > .banner__container .banner__content h2 {
         font-size: 20px !important;
     }
 
@@ -2303,7 +2218,7 @@ fw-7 {
         position: relative;
         border-left: 1px solid rgba(0, 0, 0, 0.06);
         border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-        background-color: #FFF !important;
+        background-color: #fff !important;
         transition: all 0.25s;
     }
 
@@ -2317,7 +2232,7 @@ fw-7 {
         height: 80px;
         background: #ffdc00;
         box-shadow: 0px 4.5px 22.5px 0px rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(47.250003814697266px);
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2343,8 +2258,8 @@ fw-7 {
         position: absolute;
         right: -30px;
         top: -50px;
-        width: 250px;
-        height: 250px;
+        width: 260px;
+        height: 260px;
     }
 
     .method .method__list .method__item .method__item-img img {
@@ -2377,12 +2292,10 @@ fw-7 {
         background-color: #f5eff9 !important;
         transition: all 0.25s;
     }
-
 }
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1281px) and (max-width: 1920px) {
+@media only screen and (min-width: 1281px) {
     .banner {
         height: 700px;
         max-width: 100%;
@@ -2392,12 +2305,11 @@ fw-7 {
         background-position: center;
         position: relative;
     }
-
-    .banner>.banner__container .banner__content p {
+    .banner > .banner__container .banner__content p {
         font-size: 50px !important;
     }
 
-    .banner>.banner__container .banner__content h2 {
+    .banner > .banner__container .banner__content h2 {
         font-size: 53px !important;
     }
 }
@@ -2406,7 +2318,8 @@ fw-7 {
 	:: 7.0 Auth Page
 ===============================*/
 
-.step {}
+.step {
+}
 
 .step .step__wrapper {
     box-shadow: rgba(100, 100, 111, 0.1) 0px 5px 20px 0px;
@@ -2572,8 +2485,8 @@ fw-7 {
     left: -9999px;
 }
 
-[type='radio']:checked+label,
-[type='radio']:not(:checked)+label {
+[type='radio']:checked + label,
+[type='radio']:not(:checked) + label {
     position: relative;
     padding-left: 36px;
     cursor: pointer;
@@ -2582,8 +2495,8 @@ fw-7 {
     color: var(--black-text);
 }
 
-[type='radio']:checked+label:before,
-[type='radio']:not(:checked)+label:before {
+[type='radio']:checked + label:before,
+[type='radio']:not(:checked) + label:before {
     content: '';
     position: absolute;
     left: 0;
@@ -2595,8 +2508,8 @@ fw-7 {
     background: #fff;
 }
 
-[type='radio']:checked+label:after,
-[type='radio']:not(:checked)+label:after {
+[type='radio']:checked + label:after,
+[type='radio']:not(:checked) + label:after {
     content: '';
     width: 12px;
     height: 12px;
@@ -2609,13 +2522,13 @@ fw-7 {
     transition: all 0.2s ease;
 }
 
-[type='radio']:not(:checked)+label:after {
+[type='radio']:not(:checked) + label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
 }
 
-[type='radio']:checked+label:after {
+[type='radio']:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2632,7 +2545,8 @@ fw-7 {
     margin-top: 0 !important;
 }
 
-.step__file {}
+.step__file {
+}
 
 .step__file .step__file-item {
     padding: 24px;
@@ -2854,19 +2768,19 @@ fw-7 {
     width: 0;
 }
 
-.checkbox input:checked~.checkbox__checkmark {
+.checkbox input:checked ~ .checkbox__checkmark {
     background-color: var(--primary-bg);
 }
 
-.checkbox input:checked~.checkbox__checkmark:after {
+.checkbox input:checked ~ .checkbox__checkmark:after {
     opacity: 1;
 }
 
-.checkbox:hover input~.checkbox__checkmark {
+.checkbox:hover input ~ .checkbox__checkmark {
     background-color: #eee;
 }
 
-.checkbox:hover input:checked~.checkbox__checkmark {
+.checkbox:hover input:checked ~ .checkbox__checkmark {
     background-color: var(--primary-bg);
 }
 
@@ -3005,16 +2919,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 7.0 Register Page
@@ -3255,16 +3173,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 9.0 Login Page
@@ -3488,23 +3410,32 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 10.0 About Us Page
 ===============================*/
 
 .about {
-    overflow-x: hidden;
+}
+
+.about .about__banner {
+    max-width: 1760px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .about .about__banner {
@@ -3702,7 +3633,8 @@ fw-7 {
     border-bottom: 1px solid var(--primary-bg);
 }
 
-.about .about__wrapper-achievement .about__wrapper-right .about__wrapper-ul {}
+.about .about__wrapper-achievement .about__wrapper-right .about__wrapper-ul {
+}
 
 .about .about__wrapper-achievement .about__wrapper-right .about__wrapper-li .about__wrapper-img {
     position: relative;
@@ -3757,7 +3689,8 @@ fw-7 {
     gap: 60px;
 }
 
-.about-why__left {}
+.about-why__left {
+}
 
 .about-why__title {
     font-size: 38px;
@@ -3770,7 +3703,8 @@ fw-7 {
     color: var(--cta-text);
 }
 
-.about-why__list {}
+.about-why__list {
+}
 
 .about-why__item {
     display: flex;
@@ -3797,7 +3731,8 @@ fw-7 {
     font-weight: 700;
 }
 
-.about-why__ctx {}
+.about-why__ctx {
+}
 
 .about-why__bg {
     width: 470px;
@@ -3934,7 +3869,11 @@ fw-7 {
         font-size: 16px;
     }
 
-    .account-layout .account-layout__right .account__form__transaction__history .d-flex .account__form__suport__heading {
+    .account-layout
+        .account-layout__right
+        .account__form__transaction__history
+        .d-flex
+        .account__form__suport__heading {
         color: var(--cta-text);
         font-size: 20px;
     }
@@ -3991,112 +3930,27 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 768px) {
-    .about .about__banner {
-        padding: 24px;
-    }
-
-
-    .about .about__wrapper-box {
-        margin: 24px 0;
-    }
-
-    .about .about__wrapper-title {
-        padding: 0;
-    }
-
-    .about .about__wrapper-title .about__wrapper-logo img {
-        width: 128px;
-    }
-
-    .about .about__wrapper-title {
-
-        h3 {
-            font-size: 18px;
-            line-height: 22px;
-            margin: 20px 0;
-        }
-
-        p {
-            font-size: 14px;
-        }
-    }
-
-    .about .about__wrapper-list {
-        padding-bottom: 0;
-    }
-
-    .about .about__wrapper-list .about__wrapper-item .about__wrapper-img {
-        position: static;
-        height: unset;
-        display: flex;
-        justify-content: center;
-    }
-
-    .about .about__wrapper-list .about__wrapper-item .about__wrapper-img img {
-        width: 120px !important;
-        height: 120px !important;
-        transform: translateY(25%);
-    }
-
-    .about .about__wrapper-list .about__wrapper-item .about__wrapper-content {
-        max-width: 300px;
-        width: unset;
-    }
-
-    .about .about__wrapper-list .about__wrapper-item .about__wrapper-date,
-    .about .about__wrapper-list .about__wrapper-item h4,
-    .about .about__wrapper-list .about__wrapper-item .about__wrapper-text {
-        font-size: 14px;
-    }
-
-    .about .about__wrapper-list .about__wrapper-item {
-        margin: 32px 0;
-        padding: 12px 10px;
-        padding-left: 0;
-        display: flex;
-        justify-content: flex-end;
-        gap: 12px;
-    }
-
-
+@media only screen and (min-width: 600px) {
 }
 
-@media only screen and (max-width: 600px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
 
-    .img_lg {
-        display: none;
-    }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
 
-    .img_sm {
-        display: block;
-    }
-
-    .about .about__banner .img_sm {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    .about__wrapper-ul .row {
-        row-gap: 24px;
-    }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
 
 /*=============================
 	:: 11.0 Transaction Page
 ===============================*/
 
-.transaction {}
+.transaction {
+}
 
 .transaction__header {
     background-color: #090618;
@@ -4214,7 +4068,7 @@ fw-7 {
     position: relative;
 }
 
-.transaction__header .transaction__header-bottom>.transaction__header-bg {
+.transaction__header .transaction__header-bottom > .transaction__header-bg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -4224,7 +4078,7 @@ fw-7 {
     z-index: 1;
 }
 
-.transaction__header .transaction__header-bottom>.transaction__header-bg img {
+.transaction__header .transaction__header-bottom > .transaction__header-bg img {
     width: 100%;
     height: 100%;
 }
@@ -4764,7 +4618,6 @@ fw-7 {
 }
 
 
-
 /*=============================
 	:: 12.0 Account Manager Page
 ===============================*/
@@ -4903,7 +4756,8 @@ fw-7 {
     background: #d9d9d9;
 }
 
-.account-layout__item .account-layout__sub .account-layout__sub-item {}
+.account-layout__item .account-layout__sub .account-layout__sub-item {
+}
 
 .account-layout__item .account-layout__sub .account-layout__sub-item a {
     display: block;
@@ -4983,22 +4837,27 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	12.1 Account Infomation Page
 ===============================*/
 
-.account-layout .account-layout__right .acount-info .account-info__header {}
+.account-layout .account-layout__right .acount-info .account-info__header {
+}
 
 .account-layout .account-layout__right .acount-info .account-info__header h1 {
     font-size: 36px;
@@ -5153,16 +5012,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 12.2 Change The Account Infomation Page
@@ -5214,17 +5077,35 @@ fw-7 {
     width: 250px;
 }
 
-.account-layout .account-layout__right .account-change .account-change__form .account-change__form-box .account-change__form-btn {
+.account-layout
+    .account-layout__right
+    .account-change
+    .account-change__form
+    .account-change__form-box
+    .account-change__form-btn {
     display: flex;
     justify-content: center;
 }
 
-.account-layout .account-layout__right .account-change .account-change__form .account-change__form-box .account-change__form-btn .btn {
+.account-layout
+    .account-layout__right
+    .account-change
+    .account-change__form
+    .account-change__form-box
+    .account-change__form-btn
+    .btn {
     position: relative;
     margin-top: 20px;
 }
 
-.account-layout .account-layout__right .account-change .account-change__form .account-change__form-box .account-change__form-btn .btn input {
+.account-layout
+    .account-layout__right
+    .account-change
+    .account-change__form
+    .account-change__form-box
+    .account-change__form-btn
+    .btn
+    input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -5239,24 +5120,46 @@ fw-7 {
     margin-top: 20px;
 }
 
-.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__content {
+.account-layout
+    .account-layout__right
+    .account-change
+    .account-change__form
+    .account-change__form-signature
+    .account-change__form-signature__content {
     border: 1px solid #d9d9d9;
     border-radius: 12px;
     padding: 24px;
 }
 
-.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left {
+.account-layout
+    .account-layout__right
+    .account-change
+    .account-change__form
+    .account-change__form-signature
+    .account-change__form-signature__left {
     display: flex;
     height: 100%;
     justify-content: center;
 }
 
-.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left p {
+.account-layout
+    .account-layout__right
+    .account-change
+    .account-change__form
+    .account-change__form-signature
+    .account-change__form-signature__left
+    p {
     font-size: 16px;
     font-weight: 700;
 }
 
-.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left .btn {
+.account-layout
+    .account-layout__right
+    .account-change
+    .account-change__form
+    .account-change__form-signature
+    .account-change__form-signature__left
+    .btn {
     margin-top: 20px;
     display: inline-flex;
     width: max-content;
@@ -5264,12 +5167,24 @@ fw-7 {
     gap: 8px;
 }
 
-.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left .btn i {
+.account-layout
+    .account-layout__right
+    .account-change
+    .account-change__form
+    .account-change__form-signature
+    .account-change__form-signature__left
+    .btn
+    i {
     display: inline-flex;
     height: max-content;
 }
 
-.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__right {
+.account-layout
+    .account-layout__right
+    .account-change
+    .account-change__form
+    .account-change__form-signature
+    .account-change__form-signature__right {
     height: 200px;
     max-height: 100%;
     border-radius: 12px;
@@ -5297,7 +5212,13 @@ fw-7 {
     .account-layout .account-layout__right .account-change .account-change__title p,
     .account-layout .account-layout__right .account-change .account-change__form .form-control,
     .account-layout .account-layout__right .account-change .account-change__form .account-change__form-box p,
-    .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left p {
+    .account-layout
+        .account-layout__right
+        .account-change
+        .account-change__form
+        .account-change__form-signature
+        .account-change__form-signature__left
+        p {
         font-size: 14px;
     }
 
@@ -5306,23 +5227,38 @@ fw-7 {
         font-weight: 600;
     }
 
-    .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left .btn,
-    .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__right {
+    .account-layout
+        .account-layout__right
+        .account-change
+        .account-change__form
+        .account-change__form-signature
+        .account-change__form-signature__left
+        .btn,
+    .account-layout
+        .account-layout__right
+        .account-change
+        .account-change__form
+        .account-change__form-signature
+        .account-change__form-signature__right {
         margin-top: 24px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 12.3 Software Page
@@ -5490,16 +5426,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 12.4 Acccount Transaction Page
@@ -5571,16 +5511,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 12.5 Transaction SPREAD LME Page
@@ -5653,16 +5597,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 12.6 Delivery History Page
@@ -5724,12 +5672,24 @@ fw-7 {
     transform: translateY(-50%);
 }
 
-.account-layout .account-layout__right .account__form__transaction__history form div div .account-search__input input[type='text'] {
+.account-layout
+    .account-layout__right
+    .account__form__transaction__history
+    form
+    div
+    div
+    .account-search__input
+    input[type='text'] {
     padding-left: 36px;
     border: 1px solid #d9d9d9;
 }
 
-.account-layout .account-layout__right .account__form__transaction__history form .account__description__transaction__history p {
+.account-layout
+    .account-layout__right
+    .account__form__transaction__history
+    form
+    .account__description__transaction__history
+    p {
     color: #f14141;
     font-size: 14px;
     font-style: italic;
@@ -5743,22 +5703,30 @@ fw-7 {
         padding: 24px;
     }
 
-    .account-layout .account-layout__right .account__form__transaction__history .d-flex .account__form__suport__heading {
+    .account-layout
+        .account-layout__right
+        .account__form__transaction__history
+        .d-flex
+        .account__form__suport__heading {
         font-size: 20px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 12.7 Account Suport Page
@@ -5876,16 +5844,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	12.8 Request Withdrawal Page
@@ -5968,16 +5940,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	12.9 Info Transfer Page
@@ -6075,16 +6051,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 12.10 Account Overview Page
@@ -6132,7 +6112,8 @@ fw-7 {
     margin-left: 8px;
 }
 
-.account-layout .account-layout__right .account-overview .account-overview__row {}
+.account-layout .account-layout__right .account-overview .account-overview__row {
+}
 
 .account-layout .account-layout__right .account-overview .account-overview__row h5 {
     font-size: 24px;
@@ -6179,16 +6160,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 13.0 News Page (Tin tức giới thiệu &  Tin tức thị trường)
@@ -6198,7 +6183,6 @@ fw-7 {
     padding: 85px 0 0 0;
     position: relative;
 }
-
 
 .news-header .news-header__bg {
     position: absolute;
@@ -6737,7 +6721,8 @@ fw-7 {
     margin-top: 6px;
 }
 
-.news-header .news-topic__icon {}
+.news-header .news-topic__icon {
+}
 
 .news-tags {
     margin-top: 48px;
@@ -7390,12 +7375,44 @@ fw-7 {
     }
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {
+    .news-header.makert .news-header__wrapper {
+        width: 1680px;
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        border-radius: 40px;
+    }
+
+    .news-header.makert .news-header__wrapper .news-header__box {
+        left: 120px;
+        width: 700px;
+    }
+
+    .news-header.makert .news-header__wrapper .news-header__DMkdje {
+        right: 120px;
+        top: 100px;
+        width: 570px;
+        height: 570px;
+    }
+}
 
 /*=============================
 	:: 13.1 News Page (Tin tức chi tiết giới thiệu &  Tin tức chi tiết thị trường)
 ===============================*/
 
-.news-detail {}
+.news-detail {
+}
 
 .news-detail .breadcrumb {
     background-color: #fff;
@@ -7604,7 +7621,15 @@ fw-7 {
     margin-left: 6px;
 }
 
-.news-detail .news-detail__desc .news-detail__desc-left .news-detail__search .news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-item__box p {
+.news-detail
+    .news-detail__desc
+    .news-detail__desc-left
+    .news-detail__search
+    .news-detail
+    .news-detail__desc
+    .news-detail__desc-left
+    .news-detail__desc-item__box
+    p {
     font-size: 16px;
     font-weight: 500;
     color: var(--white-text);
@@ -7975,41 +8000,51 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 14.0 Contact Page
 ===============================*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 15.0 Job Page (Cơ hội nghề nghiệp)
 ===============================*/
 
-.job {}
+.job {
+}
 
 .job .job-banner {
     height: 600px;
@@ -8455,191 +8490,32 @@ fw-7 {
     font-weight: 700;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1280px) {
-    .job .job-recruitment {
-        padding-bottom: 40px;
-    }
-
-    .job .job-environment {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .job .job-recruitment .job-recruitment__title h3,
-    .job .job-environment .job-environment__title h3 {
-        font-size: 28px;
-    }
-
-    .job .job-environment__list .job-environment__item .job-environment__item-content h5 {
-        font-size: 24px;
-    }
-
-    .job .job-environment__list .job-environment__item .job-environment__item-content p {
-        font-size: 16px;
-    }
-
-    .job .job-member {
-        margin-top: 0;
-        margin-bottom: 80px;
-    }
-
-    .job .job-member .card-member h5 {
-        font-size: 40px;
-    }
-
-    .job .job-member .card-member .card-member-avatar img {
-        max-width: 150px;
-        height: auto;
-        right: -60px;
-        bottom: 0;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-
-    .job .job-recruitment .job-recruitment__box-right {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .job .job-member .card-member .card-member-avatar img {
-        max-width: 150px;
-        height: auto;
-        right: 0;
-        bottom: 0;
-    }
-
-    .job .job-member .job-member--list {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 24px;
-    }
-
-    .job .job-member .card-member {
-        width: 100%;
-    }
-
-    .job .job-banner {
-        height: 240px;
-        margin-bottom: 24px;
-    }
-
-    .job .job-recruitment .job-recruitment__title h3,
-    .job .job-environment .job-environment__title h3 {
-        font-size: 18px;
-    }
-
-    .job .job-banner .job-banner__content .job-banner__title h3,
-    .job .job-banner .job-banner__content .job-banner__text {
-        font-size: 24px;
-    }
-
-    .job .job-banner .job-banner__content .job-banner__kKdtmD p {
-        font-size: 14px;
-    }
-
-    .job .job-recruitment .item-job-recruitment {
-        border-radius: 12px;
-        padding: 24px;
-    }
-
-    .job .job-recruitment .job-recruitment__title a {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-    }
-
-    .job .job-recruitment .job-recruitment__title h3 {
-        white-space: nowrap;
-    }
-
-    .job .job-recruitment .item-job-recruitment h5 {
-        font-size: 18px;
-    }
-
-    .job .job-recruitment .item-job-recruitment p {
-        font-size: 14px;
-    }
-
-    .job .job-recruitment .item-job-recruitment .end-item-job-recruitment .join p {
-        font-size: 14px;
-    }
-
-    .job .job-recruitment {
-        padding-bottom: 24px;
-    }
-
-    .job .job-environment {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-
-    .job .job-environment__list {
-        margin: 24px 0;
-    }
-
-    .job .job-environment__list .job-environment__item .job-environment__item-number {
-        font-size: 80px;
-    }
-
-    .job .job-environment__list .job-environment__item .job-environment__item-content h5 {
-        font-size: 18px;
-    }
-
-    .job .job-environment__list .job-environment__item .job-environment__item-content p {
-        font-size: 14px;
-    }
-
-    .job .job-member .card-member h5 {
-        font-size: 28px;
-    }
-
-    .job .job-member .card-member .card-member-name {
-        max-width: 50%;
-        padding-top: 50px;
-        padding-bottom: 12px;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 24px;
-    }
-
-    .job .job-member .card-member .card-member-bio {
-        font-size: 14px;
-    }
-
-    .job .job-member {
-        margin-bottom: 40px;
-    }
-
-}
-
-@media screen and (max-width: 600px) {
-    .job .job-recruitment .job-recruitment__title {
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        gap: 16px;
-    }
-
-    .job .job-recruitment .job-recruitment__title a {
-        display: flex;
-        align-items: center;
-    }
-
-    .job .job-recruitment .job-recruitment__box-right {
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media only screen and (min-width: 1200px) {
 }
 
 /*=============================
 	:: 15.1 Job Detail Page (Mô tả công việc)
 ===============================*/
 
-.job-detail {}
+.job-detail {
+}
 
 .job-detail .job-detail__wrapper {
     padding-top: 80px;
@@ -8785,7 +8661,15 @@ fw-7 {
     margin-left: 6px;
 }
 
-.job-detail .job-detail__desc .job-detail__desc-left .job-detail__search .job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-item__box p {
+.job-detail
+    .job-detail__desc
+    .job-detail__desc-left
+    .job-detail__search
+    .job-detail
+    .job-detail__desc
+    .job-detail__desc-left
+    .job-detail__desc-item__box
+    p {
     font-size: 16px;
     font-weight: 500;
     color: var(--white-text);
@@ -9045,25 +8929,28 @@ fw-7 {
     }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    .job-detail .job-detail__wrapper {
-        padding-top: 40px;
-        position: relative;
-    }
+@media only screen and (min-width: 768px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 16.0 Report Page (Danh sách báo cáo)
 ===============================*/
 
-.report {}
+.report {
+}
 
 .report .report-top {
     margin-top: 60px;
@@ -9095,7 +8982,8 @@ fw-7 {
 }
 
 .report .report-top .report-top__wrapper .report-top__bg-1 img,
-.report .report-top .report-top__wrapper .report-top__bg-2 img {}
+.report .report-top .report-top__wrapper .report-top__bg-2 img {
+}
 
 .report .report-top .report-top__wrapper .report-top__box {
     position: absolute;
@@ -9603,22 +9491,27 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 17.0 Transaction Page (Hướng dẫn giao dịch từ A-Z)
 ===============================*/
 
-.transaction-az {}
+.transaction-az {
+}
 
 .transaction-az__top {
     background-image: url('../img/background/bg-13.png');
@@ -9769,44 +9662,78 @@ fw-7 {
     position: relative;
 }
 
-.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left {
+.transaction-az__tabs
+    .transaction-az__tabs-account
+    .transaction-az__tabs-account__box
+    .transaction-az__tabs-account__box-left {
     width: 600px;
     max-width: 100%;
     height: 270px;
     max-height: 100%;
 }
 
-.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left h5 {
+.transaction-az__tabs
+    .transaction-az__tabs-account
+    .transaction-az__tabs-account__box
+    .transaction-az__tabs-account__box-left
+    h5 {
     font-size: 20px;
     font-weight: 600;
     color: var(--cta-text);
 }
 
-.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left li {
+.transaction-az__tabs
+    .transaction-az__tabs-account
+    .transaction-az__tabs-account__box
+    .transaction-az__tabs-account__box-left
+    li {
     margin-top: 12px;
 }
 
-.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left p {
+.transaction-az__tabs
+    .transaction-az__tabs-account
+    .transaction-az__tabs-account__box
+    .transaction-az__tabs-account__box-left
+    p {
     font-size: 16px;
     font-weight: 400;
 }
 
-.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left span {
+.transaction-az__tabs
+    .transaction-az__tabs-account
+    .transaction-az__tabs-account__box
+    .transaction-az__tabs-account__box-left
+    span {
     font-size: 16px;
     font-weight: 700;
 }
 
-.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left span.under {
+.transaction-az__tabs
+    .transaction-az__tabs-account
+    .transaction-az__tabs-account__box
+    .transaction-az__tabs-account__box-left
+    span.under {
     text-decoration: underline;
     color: var(--cta-text);
 }
 
-.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-bg {
+.transaction-az__tabs
+    .transaction-az__tabs-account
+    .transaction-az__tabs-account__box
+    .transaction-az__tabs-account__box-bg {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(40%, -50%);
     width: 435px;
     height: 275px;
 }
 
-.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-bg img {
+.transaction-az__tabs
+    .transaction-az__tabs-account
+    .transaction-az__tabs-account__box
+    .transaction-az__tabs-account__box-bg
+    img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -10236,21 +10163,43 @@ fw-7 {
         margin-top: 12px;
     }
 
-    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left h5 {
+    .transaction-az__tabs
+        .transaction-az__tabs-account
+        .transaction-az__tabs-account__box
+        .transaction-az__tabs-account__box-left
+        h5 {
         font-size: 16px;
     }
 
-    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left p,
-    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left span {
+    .transaction-az__tabs
+        .transaction-az__tabs-account
+        .transaction-az__tabs-account__box
+        .transaction-az__tabs-account__box-left
+        p,
+    .transaction-az__tabs
+        .transaction-az__tabs-account
+        .transaction-az__tabs-account__box
+        .transaction-az__tabs-account__box-left
+        span {
         font-size: 14px;
     }
 
-    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left {
+    .transaction-az__tabs
+        .transaction-az__tabs-account
+        .transaction-az__tabs-account__box
+        .transaction-az__tabs-account__box-left {
         width: 100%;
         height: fit-content;
     }
 
-    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-bg {
+    .transaction-az__tabs
+        .transaction-az__tabs-account
+        .transaction-az__tabs-account__box
+        .transaction-az__tabs-account__box-bg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(30%, 80%);
         width: 180px;
         height: 180px;
     }
@@ -10277,13 +10226,20 @@ fw-7 {
         width: 100%;
     }
 
-    .transaction-az__tabs-Mkwjfdmd .transaction-az__question .transaction-az__question-left .transaction-az__question-img {
+    .transaction-az__tabs-Mkwjfdmd
+        .transaction-az__question
+        .transaction-az__question-left
+        .transaction-az__question-img {
         width: 200px;
         height: 200px;
         margin: 0 auto;
     }
 
-    .transaction-az__tabs-Mkwjfdmd .transaction-az__question .transaction-az__question-left .transaction-az__question-img img {
+    .transaction-az__tabs-Mkwjfdmd
+        .transaction-az__question
+        .transaction-az__question-left
+        .transaction-az__question-img
+        img {
         width: 100%;
         height: 100%;
     }
@@ -10423,16 +10379,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 /*=============================
 	:: 18.0 Event Page (Lịch sử giao dịch và sự kiện)
@@ -10539,7 +10499,6 @@ fw-7 {
     box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(50px);
 }
-
 .event .table-fee-schedule {
     margin-top: 60px !important;
 }
@@ -10649,16 +10608,20 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
 
 .table__price .table-dark {
     background-color: #181336 !important;
