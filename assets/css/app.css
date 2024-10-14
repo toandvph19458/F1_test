@@ -4164,11 +4164,11 @@ fw-7 {
     flex: 1;
 
     .row {
-        row-gap: 36px;
+        row-gap: 32px;
 
         .col-6 {
-            padding-left: 18px;
-            padding-right: 18px;
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
 }
@@ -4195,10 +4195,11 @@ fw-7 {
 }
 
 .transaction .transaction__experience {
-    padding-bottom: 120px;
+    padding-bottom: 80px;
+    padding-top: 150px;
     display: flex;
     gap: 52px;
-    align-items: end;
+    align-items: stretch;
     justify-content: center;
 }
 
@@ -4221,12 +4222,15 @@ fw-7 {
 
 .transaction .transaction__experience .transaction__experience-thumb {
     flex-shrink: 0;
-    z-index: 9999;
-    margin-top: -200px;
+    z-index: 2;
+    position: relative;
+    width: 570px;
 
     img {
-        width: auto;
-        height: 500px;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0;
     }
 }
 
@@ -4285,7 +4289,8 @@ fw-7 {
 } */
 
 .transaction .transaction__customer {
-    padding: 40px 0;
+    padding: 0;
+    padding-bottom: 40px;
 }
 
 .transaction__customer-desc {
@@ -4357,7 +4362,7 @@ fw-7 {
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 1280px) {
 
     .transaction__header .transaction__header-center {
         padding: 0 80px;
@@ -4396,10 +4401,22 @@ fw-7 {
     .transaction .transaction__customer h3 {
         font-size: 28px;
     }
+
+    .transaction .transaction__experience .transaction__experience-thumb {
+        width: 430px;
+    }
+
+    .transaction .transaction__experience {
+        padding-top: 60px;
+        gap: 52px;
+        align-items: stretch;
+        justify-content: center;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1024px) {
+
     .transaction__header .transaction__header-bottom .transaction__header-box {
         flex-direction: column;
     }
@@ -4426,18 +4443,13 @@ fw-7 {
     }
 
     .transaction .transaction__experience .transaction__experience-thumb {
-        width: 300px !important;
-        margin-top: -150px;
-        height: 377px;
+        height: 260px;
     }
 
     .transaction .transaction__experience .transaction__experience-content {
         margin: 0 50px;
     }
 
-    .transaction .transaction__experience .transaction__experience-thumb img {
-        width: 300px;
-    }
 
     .transaction__header .transaction__header-center {
         display: flex;
@@ -4530,9 +4542,10 @@ fw-7 {
     .transaction__header .transaction__header-bottom {
         position: relative;
         width: 100%;
-        padding: 24px 0;
-        height: 850px;
+        padding-top: 24px;
+        padding-bottom: 150px;
     }
+
 
     .transaction__header .transaction__header-bottom .transaction__header-box {
         display: flex;
@@ -4614,18 +4627,35 @@ fw-7 {
     }
 
     .transaction .transaction__experience .transaction__experience-thumb {
-        width: 300px !important;
-        margin-top: -150px;
-        height: fit-content;
+        width: 100%;
+        height: 240px;
+    }
+
+
+    .transaction .transaction__experience .transaction__experience-thumb img {
+        height: 380px;
+        width: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .transaction .transaction__experience .transaction__experience-content {
         margin: 0;
         max-width: 100%;
+
+        h3 {
+            max-width: 100%;
+            font-size: 18px;
+        }
     }
 
-    .transaction .transaction__experience .transaction__experience-thumb img {
-        width: 300px;
+    .transaction .transaction__experience {
+        gap: 40px;
+    }
+
+    .transaction__header .transaction__header-bottom .transaction__header-item {
+        border-radius: 12px;
     }
 
     .transaction .transaction__customer-list .transaction__customer-img {
