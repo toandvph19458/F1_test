@@ -267,6 +267,15 @@ button:focus {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 40px;
+    }
+}
+
 /* container << 768px */
 @media screen and (max-width: 768px) {
     .container {
@@ -459,7 +468,8 @@ fw-7 {
     background-color: #d9d9d9;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+
     .btn.btn-primary,
     .btn.btn--primary,
     .btn.btn--cta,
@@ -478,6 +488,7 @@ fw-7 {
 ===============================*/
 
 #app {
+    overflow-x: hidden;
 }
 
 .button-fixed {
@@ -545,7 +556,7 @@ fw-7 {
     background-color: var(--black);
 }
 
-.header > .header__container {
+.header>.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -559,28 +570,28 @@ fw-7 {
     align-items: center;
 }
 
-.header__left > .header__logo {
+.header__left>.header__logo {
     display: inline-block;
     height: 38px;
     max-height: 100%;
     margin-right: 32px;
 }
 
-.header__left > .header__logo img {
+.header__left>.header__logo img {
     width: auto;
     height: 100%;
     object-fit: contain;
 }
 
-.header__nav > ul {
+.header__nav>ul {
     gap: 16px;
 }
 
-.header__nav > ul > li {
+.header__nav>ul>li {
     padding: 8px 12px;
 }
 
-.header__nav > ul > li > a {
+.header__nav>ul>li>a {
     display: inline-flex;
     gap: 6px;
     align-items: center;
@@ -588,15 +599,15 @@ fw-7 {
     text-decoration: none;
 }
 
-.header__nav > ul > li > a:hover {
+.header__nav>ul>li>a:hover {
     color: var(--primary-text);
 }
 
-.header__nav > ul > li {
+.header__nav>ul>li {
     position: relative;
 }
 
-.header__nav > ul > li:hover .nav__item-sub {
+.header__nav>ul>li:hover .nav__item-sub {
     display: block;
 }
 
@@ -622,7 +633,7 @@ fw-7 {
     background-color: transparent;
 }
 
-.header__nav .nav__item .nav__item-sub > a {
+.header__nav .nav__item .nav__item-sub>a {
     padding: 12px;
     display: flex;
     font-size: 14px;
@@ -630,7 +641,7 @@ fw-7 {
     text-decoration: none;
 }
 
-.header__nav .nav__item .nav__item-sub > a:hover {
+.header__nav .nav__item .nav__item-sub>a:hover {
     color: var(--primary-text);
 }
 
@@ -643,12 +654,12 @@ fw-7 {
     padding: 8px 12px;
 }
 
-.header__search > img {
+.header__search>img {
     width: 22px;
     height: 22px;
 }
 
-.header__right > .btn--register {
+.header__right>.btn--register {
     height: 40px;
     font-size: 14px;
     padding: 8px 24px;
@@ -658,7 +669,7 @@ fw-7 {
     background-color: var(--primary-bg) !important;
 }
 
-.header__right > .btn--login {
+.header__right>.btn--login {
     height: 40px;
     font-size: 14px;
     padding: 8px 24px;
@@ -668,34 +679,34 @@ fw-7 {
     background: #191919;
 }
 
-.header__right > .header__menu-icon {
+.header__right>.header__menu-icon {
     cursor: pointer;
     display: none;
 }
 
-.header__right > .header__menu-icon #bar {
+.header__right>.header__menu-icon #bar {
     display: block;
 }
 
-.header__right > .header__menu-icon #close {
+.header__right>.header__menu-icon #close {
     display: none;
 }
 
-.header__right > .header__menu-icon.active #bar {
+.header__right>.header__menu-icon.active #bar {
     display: none;
 }
 
-.header__right > .header__menu-icon.active #close {
+.header__right>.header__menu-icon.active #close {
     display: block;
 }
 
-.header__right > .header__hotline {
+.header__right>.header__hotline {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.header__right > .header__hotline a {
+.header__right>.header__hotline a {
     font-size: 16px;
     color: var(--white-text);
     text-decoration: none;
@@ -794,54 +805,54 @@ fw-7 {
 
     .header__nav,
     .header__search,
-    .header__right > .btn--login,
-    .header__right > .header__hotline,
-    .header__right > .btn--register {
+    .header__right>.btn--login,
+    .header__right>.header__hotline,
+    .header__right>.btn--register {
         display: none;
     }
 
-    .header__right > .header__menu-icon {
+    .header__right>.header__menu-icon {
         display: block;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
     .header__nav,
     .header__search,
-    .header__right > .btn--login,
-    .header__right > .header__hotline,
-    .header__right > .btn--register {
+    .header__right>.btn--login,
+    .header__right>.header__hotline,
+    .header__right>.btn--register {
         display: none !important;
     }
 
-    .header__right > .header__menu-icon {
+    .header__right>.header__menu-icon {
         display: block;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
     .header__nav,
     .header__search,
-    .header__right > .btn--login,
-    .header__right > .btn--register {
+    .header__right>.btn--login,
+    .header__right>.btn--register {
         display: block !important;
     }
 
-    .header__right > .header__menu-icon {
+    .header__right>.header__menu-icon {
         display: none;
     }
 
-    .header__right > .header__hotline {
+    .header__right>.header__hotline {
         display: flex !important;
     }
 }
@@ -906,14 +917,15 @@ fw-7 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
     .header__nav,
     .header__search,
-    .header__right > .btn--login,
-    .header__right > .btn--register {
+    .header__right>.btn--login,
+    .header__right>.btn--register {
         display: none;
     }
 
-    .header__right > .header__menu-icon {
+    .header__right>.header__menu-icon {
         display: block;
     }
 
@@ -949,6 +961,7 @@ fw-7 {
         padding: 40px 0;
         background-color: var(--black);
     }
+
     .social__link-icon {
         width: 24px;
         height: 24px;
@@ -962,20 +975,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 6.0 Home Page
@@ -1309,6 +1318,7 @@ fw-7 {
     background-size: cover;
     background-position: bottom;
 }
+
 .invest__list-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1395,6 +1405,7 @@ fw-7 {
 .high .high__list {
     margin-top: 60px;
 }
+
 .high__list_row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1578,6 +1589,7 @@ fw-7 {
         flex-direction: column;
         gap: 24px;
     }
+
     .newspapers .newspapers__list {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -1593,6 +1605,7 @@ fw-7 {
         height: 100%;
         object-fit: contain;
     }
+
     .invest__list-row {
         display: flex;
         flex-direction: column;
@@ -1614,66 +1627,66 @@ fw-7 {
         height: 550px;
     }
 
-    .banner > .banner__group-1 {
+    .banner>.banner__group-1 {
         width: 100%;
         height: 100%;
     }
 
-    .banner > .banner__group-2 {
+    .banner>.banner__group-2 {
         width: 100%;
         height: auto;
     }
 
-    .banner > .banner__group-1 img,
-    .banner > .banner__group-2 img {
+    .banner>.banner__group-1 img,
+    .banner>.banner__group-2 img {
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
 
-    .banner > .banner__container .banner__phone {
-    }
+    .banner>.banner__container .banner__phone {}
 
-    .banner > .banner__container .banner__phone img {
+    .banner>.banner__container .banner__phone img {
         width: 160px;
         height: auto;
     }
 
-    .banner > .banner__container .banner__content p {
+    .banner>.banner__container .banner__content p {
         font-size: 18px !important;
     }
 
-    .banner > .banner__container .banner__content h2 {
+    .banner>.banner__container .banner__content h2 {
         font-size: 20px !important;
     }
 
-    .banner > .banner__container .banner__text {
+    .banner>.banner__container .banner__text {
         margin-top: 16px;
     }
 
-    .banner > .banner__container .banner__text p {
+    .banner>.banner__container .banner__text p {
         font-size: 14px;
         margin-bottom: 16px;
     }
 
-    .banner > .banner__container .banner__text .btn--banner {
+    .banner>.banner__container .banner__text .btn--banner {
         font-size: 14px;
     }
 
-    .banner > .banner__container .banner__text .banner__chap p.year {
+    .banner>.banner__container .banner__text .banner__chap p.year {
         font-size: 14px !important;
     }
 
-    .banner > .banner__container .banner__text .banner__chap p.text {
+    .banner>.banner__container .banner__text .banner__chap p.text {
         font-size: 10px;
     }
 
-    .banner > .banner__container .banner__text .banner__chap .banner__postion {
+    .banner>.banner__container .banner__text .banner__chap .banner__postion {
         position: relative;
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
+
         span {
             font-size: 16px;
         }
@@ -1766,9 +1779,11 @@ fw-7 {
         border-radius: 6px;
         font-weight: 700;
     }
+
     .method .method__bottom span {
         text-decoration: underline;
     }
+
     .method .method__bottom p {
         font-size: 14px;
     }
@@ -1998,15 +2013,18 @@ fw-7 {
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
     }
+
     .newspapers .newspapers__list {
         padding-top: 40px;
         padding-bottom: 50px;
     }
+
     .invest__list-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
+
     .high__list_row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -2037,11 +2055,12 @@ fw-7 {
         background-position: center;
         position: relative;
     }
-    .banner > .banner__container .banner__content p {
+
+    .banner>.banner__container .banner__content p {
         font-size: 18px !important;
     }
 
-    .banner > .banner__container .banner__content h2 {
+    .banner>.banner__container .banner__content h2 {
         font-size: 20px !important;
     }
 
@@ -2152,10 +2171,12 @@ fw-7 {
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
     }
+
     .newspapers .newspapers__list {
         padding-top: 40px;
         padding-bottom: 50px;
     }
+
     .high__list_row {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -2186,11 +2207,12 @@ fw-7 {
         background-position: center;
         position: relative;
     }
-    .banner > .banner__container .banner__content p {
+
+    .banner>.banner__container .banner__content p {
         font-size: 18px !important;
     }
 
-    .banner > .banner__container .banner__content h2 {
+    .banner>.banner__container .banner__content h2 {
         font-size: 20px !important;
     }
 
@@ -2305,11 +2327,12 @@ fw-7 {
         background-position: center;
         position: relative;
     }
-    .banner > .banner__container .banner__content p {
+
+    .banner>.banner__container .banner__content p {
         font-size: 50px !important;
     }
 
-    .banner > .banner__container .banner__content h2 {
+    .banner>.banner__container .banner__content h2 {
         font-size: 53px !important;
     }
 }
@@ -2318,8 +2341,7 @@ fw-7 {
 	:: 7.0 Auth Page
 ===============================*/
 
-.step {
-}
+.step {}
 
 .step .step__wrapper {
     box-shadow: rgba(100, 100, 111, 0.1) 0px 5px 20px 0px;
@@ -2485,8 +2507,8 @@ fw-7 {
     left: -9999px;
 }
 
-[type='radio']:checked + label,
-[type='radio']:not(:checked) + label {
+[type='radio']:checked+label,
+[type='radio']:not(:checked)+label {
     position: relative;
     padding-left: 36px;
     cursor: pointer;
@@ -2495,8 +2517,8 @@ fw-7 {
     color: var(--black-text);
 }
 
-[type='radio']:checked + label:before,
-[type='radio']:not(:checked) + label:before {
+[type='radio']:checked+label:before,
+[type='radio']:not(:checked)+label:before {
     content: '';
     position: absolute;
     left: 0;
@@ -2508,8 +2530,8 @@ fw-7 {
     background: #fff;
 }
 
-[type='radio']:checked + label:after,
-[type='radio']:not(:checked) + label:after {
+[type='radio']:checked+label:after,
+[type='radio']:not(:checked)+label:after {
     content: '';
     width: 12px;
     height: 12px;
@@ -2522,13 +2544,13 @@ fw-7 {
     transition: all 0.2s ease;
 }
 
-[type='radio']:not(:checked) + label:after {
+[type='radio']:not(:checked)+label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
 }
 
-[type='radio']:checked + label:after {
+[type='radio']:checked+label:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2545,8 +2567,7 @@ fw-7 {
     margin-top: 0 !important;
 }
 
-.step__file {
-}
+.step__file {}
 
 .step__file .step__file-item {
     padding: 24px;
@@ -2768,19 +2789,19 @@ fw-7 {
     width: 0;
 }
 
-.checkbox input:checked ~ .checkbox__checkmark {
+.checkbox input:checked~.checkbox__checkmark {
     background-color: var(--primary-bg);
 }
 
-.checkbox input:checked ~ .checkbox__checkmark:after {
+.checkbox input:checked~.checkbox__checkmark:after {
     opacity: 1;
 }
 
-.checkbox:hover input ~ .checkbox__checkmark {
+.checkbox:hover input~.checkbox__checkmark {
     background-color: #eee;
 }
 
-.checkbox:hover input:checked ~ .checkbox__checkmark {
+.checkbox:hover input:checked~.checkbox__checkmark {
     background-color: var(--primary-bg);
 }
 
@@ -2919,20 +2940,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 7.0 Register Page
@@ -3173,20 +3190,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 9.0 Login Page
@@ -3410,27 +3423,22 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 10.0 About Us Page
 ===============================*/
 
-.about {
-}
+.about {}
 
 .about .about__banner {
     max-width: 1760px;
@@ -3504,29 +3512,29 @@ fw-7 {
 }
 
 .about .about__wrapper-list .about__wrapper-item {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
     border-radius: 20px;
     padding: 40px;
-    margin: 100px 0 24px 0;
+    margin: 0;
     box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .about .about__wrapper-list .about__wrapper-item .about__wrapper-img {
-    position: absolute;
-    left: 0;
-    top: -120px;
+    position: relative;
+    width: 400px;
 }
 
 .about .about__wrapper-list .about__wrapper-item .about__wrapper-img img {
     width: 100% !important;
     height: auto;
-    transform: translateY(40px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .about .about__wrapper-list .about__wrapper-item .about__wrapper-content {
-    max-width: 300px;
     width: 100%;
 }
 
@@ -3559,9 +3567,9 @@ fw-7 {
     background-color: white;
     z-index: 1;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
-    transform: translateX(-100%);
+    transform: translate(-100%, -60%);
 }
 
 
@@ -3633,8 +3641,7 @@ fw-7 {
     border-bottom: 1px solid var(--primary-bg);
 }
 
-.about .about__wrapper-achievement .about__wrapper-right .about__wrapper-ul {
-}
+.about .about__wrapper-achievement .about__wrapper-right .about__wrapper-ul {}
 
 .about .about__wrapper-achievement .about__wrapper-right .about__wrapper-li .about__wrapper-img {
     position: relative;
@@ -3689,8 +3696,7 @@ fw-7 {
     gap: 60px;
 }
 
-.about-why__left {
-}
+.about-why__left {}
 
 .about-why__title {
     font-size: 38px;
@@ -3703,8 +3709,7 @@ fw-7 {
     color: var(--cta-text);
 }
 
-.about-why__list {
-}
+.about-why__list {}
 
 .about-why__item {
     display: flex;
@@ -3731,8 +3736,7 @@ fw-7 {
     font-weight: 700;
 }
 
-.about-why__ctx {
-}
+.about-why__ctx {}
 
 .about-why__bg {
     width: 470px;
@@ -3771,26 +3775,14 @@ fw-7 {
         display: none;
     }
 
-    .about .about__wrapper-list .about__wrapper-item .about__wrapper-img img {
-        width: 240px !important;
-        transform: translate(50%, 50%);
-    }
+    .about .about__wrapper-list .about__wrapper-item .about__wrapper-img img {}
 }
 
 @media only screen and (max-width: 1024px) {
     .about .about__wrapper-list .about__wrapper-item .about__wrapper-img {
+        flex: 0 0 240px;
         width: 240px;
         height: 240px;
-        position: static;
-
-        img {
-            transform: unset;
-        }
-    }
-
-    .about .about__wrapper-list .about__wrapper-item {
-        justify-content: space-between;
-        margin-top: 0;
     }
 
     .about .about__wrapper-achievement {
@@ -3869,11 +3861,7 @@ fw-7 {
         font-size: 16px;
     }
 
-    .account-layout
-        .account-layout__right
-        .account__form__transaction__history
-        .d-flex
-        .account__form__suport__heading {
+    .account-layout .account-layout__right .account__form__transaction__history .d-flex .account__form__suport__heading {
         color: var(--cta-text);
         font-size: 20px;
     }
@@ -3929,28 +3917,90 @@ fw-7 {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 768px) {
+    .about .about__banner {
+        padding: 24px;
+    }
+
+
+    .about .about__wrapper-box {
+        margin: 24px 0;
+    }
+
+    .about .about__wrapper-title {
+        padding: 0;
+    }
+
+    .about .about__wrapper-title .about__wrapper-logo img {
+        width: 128px;
+    }
+
+    .about .about__wrapper-title {
+        margin-bottom: 32px;
+
+        h3 {
+            font-size: 18px;
+            line-height: 22px;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .about .about__wrapper-list {
+        padding-bottom: 0;
+    }
+
+    .about .about__wrapper-list .about__wrapper-item .about__wrapper-img {
+        flex: 0 0 120px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .about .about__wrapper-list .about__wrapper-item .about__wrapper-date,
+    .about .about__wrapper-list .about__wrapper-item h4,
+    .about .about__wrapper-list .about__wrapper-item .about__wrapper-text {
+        font-size: 14px;
+    }
+
+    .about .about__wrapper-list .about__wrapper-item h4 {
+        margin: 8px 0;
+    }
+
+    .about .about__wrapper-list .about__wrapper-item {
+        margin-bottom: 32px;
+        padding: 12px 10px;
+        padding-left: 0;
+        gap: 12px;
+        align-items: start;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .img_sm {
+        display: block;
+    }
+
+    .about .about__banner .img_sm {
+        width: 100%;
+        display: block;
+    }
+
+    .img_lg {
+        display: none;
+    }
 }
 
 /*=============================
 	:: 11.0 Transaction Page
 ===============================*/
 
-.transaction {
-}
+.transaction {}
 
 .transaction__header {
     background-color: #090618;
@@ -4068,7 +4118,7 @@ fw-7 {
     position: relative;
 }
 
-.transaction__header .transaction__header-bottom > .transaction__header-bg {
+.transaction__header .transaction__header-bottom>.transaction__header-bg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -4078,7 +4128,7 @@ fw-7 {
     z-index: 1;
 }
 
-.transaction__header .transaction__header-bottom > .transaction__header-bg img {
+.transaction__header .transaction__header-bottom>.transaction__header-bg img {
     width: 100%;
     height: 100%;
 }
@@ -4175,8 +4225,8 @@ fw-7 {
     margin-top: -200px;
 
     img {
-        width: 570px;
-        height: auto;
+        width: auto;
+        height: 500px;
     }
 }
 
@@ -4404,7 +4454,7 @@ fw-7 {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .transaction__header .transaction__header-top {
         padding: 32px 0;
         background-color: #090618;
@@ -4435,8 +4485,7 @@ fw-7 {
     }
 
     .transaction__header .transaction__header-top .transaction__header-laptop {
-        width: 260px;
-        max-width: 100%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -4617,6 +4666,13 @@ fw-7 {
 
 }
 
+@media screen and (max-width: 600px) {
+    .transaction__header .transaction__header-top .transaction__header-laptop {
+        width: 260px;
+        height: auto;
+    }
+}
+
 
 /*=============================
 	:: 12.0 Account Manager Page
@@ -4756,8 +4812,7 @@ fw-7 {
     background: #d9d9d9;
 }
 
-.account-layout__item .account-layout__sub .account-layout__sub-item {
-}
+.account-layout__item .account-layout__sub .account-layout__sub-item {}
 
 .account-layout__item .account-layout__sub .account-layout__sub-item a {
     display: block;
@@ -4837,27 +4892,22 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	12.1 Account Infomation Page
 ===============================*/
 
-.account-layout .account-layout__right .acount-info .account-info__header {
-}
+.account-layout .account-layout__right .acount-info .account-info__header {}
 
 .account-layout .account-layout__right .acount-info .account-info__header h1 {
     font-size: 36px;
@@ -5012,20 +5062,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 12.2 Change The Account Infomation Page
@@ -5077,35 +5123,17 @@ fw-7 {
     width: 250px;
 }
 
-.account-layout
-    .account-layout__right
-    .account-change
-    .account-change__form
-    .account-change__form-box
-    .account-change__form-btn {
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-box .account-change__form-btn {
     display: flex;
     justify-content: center;
 }
 
-.account-layout
-    .account-layout__right
-    .account-change
-    .account-change__form
-    .account-change__form-box
-    .account-change__form-btn
-    .btn {
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-box .account-change__form-btn .btn {
     position: relative;
     margin-top: 20px;
 }
 
-.account-layout
-    .account-layout__right
-    .account-change
-    .account-change__form
-    .account-change__form-box
-    .account-change__form-btn
-    .btn
-    input {
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-box .account-change__form-btn .btn input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -5120,46 +5148,24 @@ fw-7 {
     margin-top: 20px;
 }
 
-.account-layout
-    .account-layout__right
-    .account-change
-    .account-change__form
-    .account-change__form-signature
-    .account-change__form-signature__content {
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__content {
     border: 1px solid #d9d9d9;
     border-radius: 12px;
     padding: 24px;
 }
 
-.account-layout
-    .account-layout__right
-    .account-change
-    .account-change__form
-    .account-change__form-signature
-    .account-change__form-signature__left {
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left {
     display: flex;
     height: 100%;
     justify-content: center;
 }
 
-.account-layout
-    .account-layout__right
-    .account-change
-    .account-change__form
-    .account-change__form-signature
-    .account-change__form-signature__left
-    p {
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left p {
     font-size: 16px;
     font-weight: 700;
 }
 
-.account-layout
-    .account-layout__right
-    .account-change
-    .account-change__form
-    .account-change__form-signature
-    .account-change__form-signature__left
-    .btn {
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left .btn {
     margin-top: 20px;
     display: inline-flex;
     width: max-content;
@@ -5167,24 +5173,12 @@ fw-7 {
     gap: 8px;
 }
 
-.account-layout
-    .account-layout__right
-    .account-change
-    .account-change__form
-    .account-change__form-signature
-    .account-change__form-signature__left
-    .btn
-    i {
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left .btn i {
     display: inline-flex;
     height: max-content;
 }
 
-.account-layout
-    .account-layout__right
-    .account-change
-    .account-change__form
-    .account-change__form-signature
-    .account-change__form-signature__right {
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__right {
     height: 200px;
     max-height: 100%;
     border-radius: 12px;
@@ -5212,13 +5206,7 @@ fw-7 {
     .account-layout .account-layout__right .account-change .account-change__title p,
     .account-layout .account-layout__right .account-change .account-change__form .form-control,
     .account-layout .account-layout__right .account-change .account-change__form .account-change__form-box p,
-    .account-layout
-        .account-layout__right
-        .account-change
-        .account-change__form
-        .account-change__form-signature
-        .account-change__form-signature__left
-        p {
+    .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left p {
         font-size: 14px;
     }
 
@@ -5227,38 +5215,23 @@ fw-7 {
         font-weight: 600;
     }
 
-    .account-layout
-        .account-layout__right
-        .account-change
-        .account-change__form
-        .account-change__form-signature
-        .account-change__form-signature__left
-        .btn,
-    .account-layout
-        .account-layout__right
-        .account-change
-        .account-change__form
-        .account-change__form-signature
-        .account-change__form-signature__right {
+    .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left .btn,
+    .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__right {
         margin-top: 24px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 12.3 Software Page
@@ -5426,20 +5399,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 12.4 Acccount Transaction Page
@@ -5511,20 +5480,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 12.5 Transaction SPREAD LME Page
@@ -5597,20 +5562,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 12.6 Delivery History Page
@@ -5672,24 +5633,12 @@ fw-7 {
     transform: translateY(-50%);
 }
 
-.account-layout
-    .account-layout__right
-    .account__form__transaction__history
-    form
-    div
-    div
-    .account-search__input
-    input[type='text'] {
+.account-layout .account-layout__right .account__form__transaction__history form div div .account-search__input input[type='text'] {
     padding-left: 36px;
     border: 1px solid #d9d9d9;
 }
 
-.account-layout
-    .account-layout__right
-    .account__form__transaction__history
-    form
-    .account__description__transaction__history
-    p {
+.account-layout .account-layout__right .account__form__transaction__history form .account__description__transaction__history p {
     color: #f14141;
     font-size: 14px;
     font-style: italic;
@@ -5703,30 +5652,22 @@ fw-7 {
         padding: 24px;
     }
 
-    .account-layout
-        .account-layout__right
-        .account__form__transaction__history
-        .d-flex
-        .account__form__suport__heading {
+    .account-layout .account-layout__right .account__form__transaction__history .d-flex .account__form__suport__heading {
         font-size: 20px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 12.7 Account Suport Page
@@ -5844,20 +5785,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	12.8 Request Withdrawal Page
@@ -5940,20 +5877,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	12.9 Info Transfer Page
@@ -6051,20 +5984,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 12.10 Account Overview Page
@@ -6112,8 +6041,7 @@ fw-7 {
     margin-left: 8px;
 }
 
-.account-layout .account-layout__right .account-overview .account-overview__row {
-}
+.account-layout .account-layout__right .account-overview .account-overview__row {}
 
 .account-layout .account-layout__right .account-overview .account-overview__row h5 {
     font-size: 24px;
@@ -6160,20 +6088,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 13.0 News Page (Tin tức giới thiệu &  Tin tức thị trường)
@@ -6721,8 +6645,7 @@ fw-7 {
     margin-top: 6px;
 }
 
-.news-header .news-topic__icon {
-}
+.news-header .news-topic__icon {}
 
 .news-tags {
     margin-top: 48px;
@@ -7376,12 +7299,10 @@ fw-7 {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1280px) {
@@ -7411,8 +7332,7 @@ fw-7 {
 	:: 13.1 News Page (Tin tức chi tiết giới thiệu &  Tin tức chi tiết thị trường)
 ===============================*/
 
-.news-detail {
-}
+.news-detail {}
 
 .news-detail .breadcrumb {
     background-color: #fff;
@@ -7437,8 +7357,16 @@ fw-7 {
 }
 
 .news-detail .news-detail__wrapper {
-    padding-top: 80px;
+    max-width: 1640px;;
+    margin: 0 auto;
     position: relative;
+    padding: 80px 70px;
+}
+
+.news-detail__desc-row{
+ display: grid;
+ grid-template-columns: 2fr 7fr 3fr;
+ gap: 48px;
 }
 
 .news-detail .news-detail__bg {
@@ -7621,15 +7549,7 @@ fw-7 {
     margin-left: 6px;
 }
 
-.news-detail
-    .news-detail__desc
-    .news-detail__desc-left
-    .news-detail__search
-    .news-detail
-    .news-detail__desc
-    .news-detail__desc-left
-    .news-detail__desc-item__box
-    p {
+.news-detail .news-detail__desc .news-detail__desc-left .news-detail__search .news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-item__box p {
     font-size: 16px;
     font-weight: 500;
     color: var(--white-text);
@@ -7680,8 +7600,11 @@ fw-7 {
     display: flex;
     gap: 48px;
     align-items: center;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
     border-top: 1px solid #d9d9d9;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .news-detail .news-detail__desc .news-detail__tags .news-detail__tags-item a {
@@ -7789,7 +7712,7 @@ fw-7 {
 }
 
 .comment-wrapper {
-    margin-top: 48px;
+    margin-top: 0px;
 }
 
 .comment-wrapper h3 {
@@ -7815,7 +7738,7 @@ fw-7 {
 }
 
 .comment-wrapper .comment {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .comment-wrapper .comment h4 {
@@ -7874,16 +7797,33 @@ fw-7 {
 
 .load-more a {
     display: inline-flex;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--cta-text);
     text-decoration: none;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .news-detail .news-detail__wrapper {
-        padding-top: 24px;
+    
+    .news-detail .news-detail__desc .news-detail__tags .news-detail__tags-item a {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--cta-text);
     }
+    .comment-wrapper {
+        margin-top: 0px;
+    }
+    .news-detail-breadcrumb{
+        padding-top: 16px;
+    }
+    .news-detail .news-detail__wrapper {
+        padding:24px;
+    }
+    .news-detail__desc-row{
+       display: flex;
+       flex-direction: column;
+       gap: 16px;
+       }
 
     .news-detail .news-detail__box {
         height: 200px;
@@ -7922,7 +7862,8 @@ fw-7 {
     .news-detail .news-detail__desc .news-detail__tags {
         display: flex;
         gap: 16px;
-        padding: 24px 0;
+        padding-top: 24px;
+        padding-bottom: 0px;
         flex-wrap: wrap;
     }
 
@@ -7932,7 +7873,7 @@ fw-7 {
 
     .news-detail .news-detail__desc .news-detail__desc-left h6,
     .news-detail .news-detail__desc .news-detail__desc-left p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-list {
@@ -7998,21 +7939,93 @@ fw-7 {
         display: none;
     }
 }
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .news-detail .news-detail__desc .news-detail__tags {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        border-top: 1px solid #d9d9d9;
+        justify-content: center;
+    }
+    .news-detail .news-detail__desc .news-detail__tags .news-detail__tags-item a {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--cta-text);
+    }
+    .comment-wrapper {
+        margin-top: 0px;
+    }
+    .news-detail-breadcrumb{
+        padding-top: 24px;
+    }
+    .news-detail .news-detail__desc {
+        margin-top: 24px;
+    }
+    .news-detail__desc-right {
+        display: none;
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+    .news-detail .news-detail__desc-right__relate.mobile {
+        display: block;
+    }
+
+    .news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-wrapper {
+        display: none;
+    }
+    .news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-wrapper {
+        display: block;
+    }
+    .news-detail__desc-row{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        }
+    .news-detail .news-detail__wrapper {
+        max-width: 1640px;
+        margin: 0 auto;
+        position: relative;
+        padding: 40px;
+    }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+    .news-detail__desc-row{
+        display: grid;
+        grid-template-columns: 2fr 7fr 3fr;
+        gap: 24px;
+       }
+    .news-detail .news-detail__desc-right {
+        padding: 20px;
+        overflow: hidden;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 24px;
+    }
+    .news-detail .news-detail__wrapper {
+        padding:40px;
+    }
+    .news-detail .news-detail__desc .news-detail__tags {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        border-top: 1px solid #d9d9d9;
+        justify-content: center;
+    }
+    .news-detail .news-detail__desc .news-detail__tags .news-detail__tags-item a {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--cta-text);
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1281px) {
 }
 
 /*=============================
@@ -8020,31 +8033,26 @@ fw-7 {
 ===============================*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 }
 
 /*=============================
 	:: 15.0 Job Page (Cơ hội nghề nghiệp)
 ===============================*/
 
-.job {
-}
+.job {}
 
 .job .job-banner {
     height: 600px;
@@ -8491,31 +8499,25 @@ fw-7 {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 15.1 Job Detail Page (Mô tả công việc)
 ===============================*/
 
-.job-detail {
-}
+.job-detail {}
 
 .job-detail .job-detail__wrapper {
     padding-top: 80px;
@@ -8661,15 +8663,7 @@ fw-7 {
     margin-left: 6px;
 }
 
-.job-detail
-    .job-detail__desc
-    .job-detail__desc-left
-    .job-detail__search
-    .job-detail
-    .job-detail__desc
-    .job-detail__desc-left
-    .job-detail__desc-item__box
-    p {
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__search .job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-item__box p {
     font-size: 16px;
     font-weight: 500;
     color: var(--white-text);
@@ -8930,27 +8924,22 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 16.0 Report Page (Danh sách báo cáo)
 ===============================*/
 
-.report {
-}
+.report {}
 
 .report .report-top {
     margin-top: 60px;
@@ -8982,8 +8971,7 @@ fw-7 {
 }
 
 .report .report-top .report-top__wrapper .report-top__bg-1 img,
-.report .report-top .report-top__wrapper .report-top__bg-2 img {
-}
+.report .report-top .report-top__wrapper .report-top__bg-2 img {}
 
 .report .report-top .report-top__wrapper .report-top__box {
     position: absolute;
@@ -9350,12 +9338,14 @@ fw-7 {
     font-weight: 500;
     line-height: 20px;
 }
-@media only screen and (max-width:1054px){
-    
+
+@media only screen and (max-width:1054px) {
+
     .report .report-title .report-title__box {
         max-width: 100%;
         width: 100% !important;
     }
+
     .report .report-title .report-title__bg-2 {
         display: none !important;
     }
@@ -9501,27 +9491,22 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 17.0 Transaction Page (Hướng dẫn giao dịch từ A-Z)
 ===============================*/
 
-.transaction-az {
-}
+.transaction-az {}
 
 .transaction-az__top {
     background-image: url('../img/background/bg-13.png');
@@ -9672,65 +9657,39 @@ fw-7 {
     position: relative;
 }
 
-.transaction-az__tabs
-    .transaction-az__tabs-account
-    .transaction-az__tabs-account__box
-    .transaction-az__tabs-account__box-left {
+.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left {
     width: 600px;
     max-width: 100%;
     height: 270px;
     max-height: 100%;
 }
 
-.transaction-az__tabs
-    .transaction-az__tabs-account
-    .transaction-az__tabs-account__box
-    .transaction-az__tabs-account__box-left
-    h5 {
+.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left h5 {
     font-size: 20px;
     font-weight: 600;
     color: var(--cta-text);
 }
 
-.transaction-az__tabs
-    .transaction-az__tabs-account
-    .transaction-az__tabs-account__box
-    .transaction-az__tabs-account__box-left
-    li {
+.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left li {
     margin-top: 12px;
 }
 
-.transaction-az__tabs
-    .transaction-az__tabs-account
-    .transaction-az__tabs-account__box
-    .transaction-az__tabs-account__box-left
-    p {
+.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left p {
     font-size: 16px;
     font-weight: 400;
 }
 
-.transaction-az__tabs
-    .transaction-az__tabs-account
-    .transaction-az__tabs-account__box
-    .transaction-az__tabs-account__box-left
-    span {
+.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left span {
     font-size: 16px;
     font-weight: 700;
 }
 
-.transaction-az__tabs
-    .transaction-az__tabs-account
-    .transaction-az__tabs-account__box
-    .transaction-az__tabs-account__box-left
-    span.under {
+.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left span.under {
     text-decoration: underline;
     color: var(--cta-text);
 }
 
-.transaction-az__tabs
-    .transaction-az__tabs-account
-    .transaction-az__tabs-account__box
-    .transaction-az__tabs-account__box-bg {
+.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-bg {
     position: absolute;
     right: 0;
     top: 50%;
@@ -9739,11 +9698,7 @@ fw-7 {
     height: 275px;
 }
 
-.transaction-az__tabs
-    .transaction-az__tabs-account
-    .transaction-az__tabs-account__box
-    .transaction-az__tabs-account__box-bg
-    img {
+.transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-bg img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -10173,39 +10128,21 @@ fw-7 {
         margin-top: 12px;
     }
 
-    .transaction-az__tabs
-        .transaction-az__tabs-account
-        .transaction-az__tabs-account__box
-        .transaction-az__tabs-account__box-left
-        h5 {
+    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left h5 {
         font-size: 16px;
     }
 
-    .transaction-az__tabs
-        .transaction-az__tabs-account
-        .transaction-az__tabs-account__box
-        .transaction-az__tabs-account__box-left
-        p,
-    .transaction-az__tabs
-        .transaction-az__tabs-account
-        .transaction-az__tabs-account__box
-        .transaction-az__tabs-account__box-left
-        span {
+    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left p,
+    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left span {
         font-size: 14px;
     }
 
-    .transaction-az__tabs
-        .transaction-az__tabs-account
-        .transaction-az__tabs-account__box
-        .transaction-az__tabs-account__box-left {
+    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-left {
         width: 100%;
         height: fit-content;
     }
 
-    .transaction-az__tabs
-        .transaction-az__tabs-account
-        .transaction-az__tabs-account__box
-        .transaction-az__tabs-account__box-bg {
+    .transaction-az__tabs .transaction-az__tabs-account .transaction-az__tabs-account__box .transaction-az__tabs-account__box-bg {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -10236,20 +10173,13 @@ fw-7 {
         width: 100%;
     }
 
-    .transaction-az__tabs-Mkwjfdmd
-        .transaction-az__question
-        .transaction-az__question-left
-        .transaction-az__question-img {
+    .transaction-az__tabs-Mkwjfdmd .transaction-az__question .transaction-az__question-left .transaction-az__question-img {
         width: 200px;
         height: 200px;
         margin: 0 auto;
     }
 
-    .transaction-az__tabs-Mkwjfdmd
-        .transaction-az__question
-        .transaction-az__question-left
-        .transaction-az__question-img
-        img {
+    .transaction-az__tabs-Mkwjfdmd .transaction-az__question .transaction-az__question-left .transaction-az__question-img img {
         width: 100%;
         height: 100%;
     }
@@ -10389,20 +10319,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 /*=============================
 	:: 18.0 Event Page (Lịch sử giao dịch và sự kiện)
@@ -10508,6 +10434,7 @@ fw-7 {
     box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(50px);
 }
+
 .event .table-fee-schedule {
     margin-top: 60px !important;
 }
@@ -10616,20 +10543,16 @@ fw-7 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
 
 .table__price .table-dark {
     background-color: #181336 !important;
