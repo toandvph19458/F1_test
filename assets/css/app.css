@@ -6415,7 +6415,10 @@ fw-7 {
 .news-body .news-body__wrapper {
     padding: 180px 0 0 0;
 }
+.search__wrapper_f1{
+    padding: 80px 0 0 0 !important;
 
+}
 .news-body .news-body__wrapper .news-body__card {
     border-radius: 16px;
     box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
