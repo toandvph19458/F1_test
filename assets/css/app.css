@@ -962,7 +962,7 @@ fw-7 {
         background-color: var(--black);
     }
 
-    .social__link-icon {
+    .social__link img {
         width: 24px;
         height: 24px;
     }
@@ -3338,7 +3338,14 @@ fw-7 {
     font-weight: 700;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
+    .contact__left{
+        border-radius: 20px 20px 0px 0px !important;
+    }
+    .contact__right{
+        border-radius: 0px 0px 20px 20px !important;
+        padding: 28px !important;
+    }
 
     .container__login .container .row .login__col__left {
         /* border-radius: 20px 20px 0px 0px !important; */
@@ -7460,10 +7467,9 @@ fw-7 {
 
 .news-detail .news-detail__wrapper {
     max-width: 1640px;
-    ;
     margin: 0 auto;
     position: relative;
-    padding: 80px 70px;
+    padding: 80px 0;
 }
 
 .news-detail__desc-row {
@@ -7923,7 +7929,7 @@ fw-7 {
     }
 
     .news-detail .news-detail__wrapper {
-        padding: 24px;
+        padding: 24px 0;
     }
 
     .news-detail__desc-row {
@@ -8124,7 +8130,7 @@ fw-7 {
     }
 
     .news-detail .news-detail__wrapper {
-        padding: 40px;
+        padding: 40px 0;
     }
 
     .news-detail .news-detail__desc .news-detail__tags {
@@ -8475,7 +8481,7 @@ fw-7 {
 
 .job .job-environment__list .job-environment__item {
     position: relative;
-    margin: 40px 0;
+    margin-top: 40px;
 }
 
 .job .job-environment__list .job-environment__item .job-environment__item-number {
@@ -8509,6 +8515,7 @@ fw-7 {
     padding-bottom: 8px;
     padding-top: 8px;
     border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 80px;
 }
 
 .job .job-environment__slide {
@@ -8651,7 +8658,13 @@ fw-7 {
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-
+    .job .job-environment__list .job-environment__item {
+        position: relative;
+        margin: 10px 0;
+    }
+    .job .job-environment__note {
+        margin-bottom: 40px;
+    }
     .job .job-recruitment .job-recruitment__box-right {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -8726,7 +8739,6 @@ fw-7 {
 
     .job .job-environment {
         padding-top: 24px;
-        padding-bottom: 24px;
     }
 
     .job .job-environment__list {
@@ -10705,7 +10717,6 @@ fw-7 {
 }
 
 .event .event-table {
-    margin-top: 40px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -10743,6 +10754,9 @@ fw-7 {
 }
 
 @media only screen and (max-width: 600px) {
+    .event .event-top {
+        height: 220px;
+    }
     .event .event-top .event-top__box {
         position: absolute;
         left: 40px;
@@ -10807,6 +10821,7 @@ fw-7 {
     .event .event-table .table thead th {
         border-width: 1px;
         min-width: 160px;
+        line-height: normal;
     }
 
     .event .event-table .table tr td {
