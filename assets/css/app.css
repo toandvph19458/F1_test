@@ -8458,7 +8458,7 @@ fw-7 {
     height: auto;
     z-index: 2;
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     right: -40px;
     object-fit: contain;
 }
@@ -8619,6 +8619,7 @@ fw-7 {
         padding-bottom: 40px;
     }
 }
+
 .job .job-environment__list .job-environment__item .job-environment__item-content h5 {
     font-size: 24px;
 }
@@ -8636,143 +8637,150 @@ fw-7 {
     font-size: 40px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .job .job-member .card-member .card-member-avatar img {
+        max-width: 160px;
+    }
+}
+
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
 
-.job .job-recruitment .job-recruitment__box-right {
-    grid-template-columns: repeat(2, 1fr);
-}
+    .job .job-recruitment .job-recruitment__box-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-.job .job-member .card-member .card-member-avatar img {
-    max-width: 150px;
-    height: auto;
-    right: 0;
-    bottom: 0;
-}
+    .job .job-member .card-member .card-member-avatar img {
+        max-width: 150px;
+        height: auto;
+        right: 0;
+        bottom: 0;
+    }
 
-.job .job-member .job-member--list {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-}
+    .job .job-member .job-member--list {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
 
-.job .job-member .card-member {
-    width: 100%;
-}
+    .job .job-member .card-member {
+        width: 100%;
+    }
 
-.job .job-banner {
-    height: 240px;
-    margin-bottom: 24px;
-}
+    .job .job-banner {
+        height: 240px;
+        margin-bottom: 24px;
+    }
 
-.job .job-recruitment .job-recruitment__title h3,
-.job .job-environment .job-environment__title h3 {
-    font-size: 18px;
-}
+    .job .job-recruitment .job-recruitment__title h3,
+    .job .job-environment .job-environment__title h3 {
+        font-size: 18px;
+    }
 
-.job .job-banner .job-banner__content .job-banner__title h3,
-.job .job-banner .job-banner__content .job-banner__text {
-    font-size: 24px;
-}
+    .job .job-banner .job-banner__content .job-banner__title h3,
+    .job .job-banner .job-banner__content .job-banner__text {
+        font-size: 24px;
+    }
 
-.job .job-banner .job-banner__content .job-banner__kKdtmD p {
-    font-size: 14px;
-}
+    .job .job-banner .job-banner__content .job-banner__kKdtmD p {
+        font-size: 14px;
+    }
 
-.job .job-recruitment .item-job-recruitment {
-    border-radius: 12px;
-    padding: 24px;
-}
+    .job .job-recruitment .item-job-recruitment {
+        border-radius: 12px;
+        padding: 24px;
+    }
 
-.job .job-recruitment .job-recruitment__title a {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-}
+    .job .job-recruitment .job-recruitment__title a {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
 
-.job .job-recruitment .job-recruitment__title h3 {
-    white-space: nowrap;
-}
+    .job .job-recruitment .job-recruitment__title h3 {
+        white-space: nowrap;
+    }
 
-.job .job-recruitment .item-job-recruitment h5 {
-    font-size: 18px;
-}
+    .job .job-recruitment .item-job-recruitment h5 {
+        font-size: 18px;
+    }
 
-.job .job-recruitment .item-job-recruitment p {
-    font-size: 14px;
-}
+    .job .job-recruitment .item-job-recruitment p {
+        font-size: 14px;
+    }
 
-.job .job-recruitment .item-job-recruitment .end-item-job-recruitment .join p {
-    font-size: 14px;
-}
+    .job .job-recruitment .item-job-recruitment .end-item-job-recruitment .join p {
+        font-size: 14px;
+    }
 
-.job .job-recruitment {
-    padding-bottom: 24px;
-}
+    .job .job-recruitment {
+        padding-bottom: 24px;
+    }
 
-.job .job-environment {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
+    .job .job-environment {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 
-.job .job-environment__list {
-    margin: 24px 0;
-}
+    .job .job-environment__list {
+        margin: 24px 0;
+    }
 
-.job .job-environment__list .job-environment__item .job-environment__item-number {
-    font-size: 80px;
-}
+    .job .job-environment__list .job-environment__item .job-environment__item-number {
+        font-size: 80px;
+    }
 
-.job .job-environment__list .job-environment__item .job-environment__item-content h5 {
-    font-size: 18px;
-}
+    .job .job-environment__list .job-environment__item .job-environment__item-content h5 {
+        font-size: 18px;
+    }
 
-.job .job-environment__list .job-environment__item .job-environment__item-content p {
-    font-size: 14px;
-}
+    .job .job-environment__list .job-environment__item .job-environment__item-content p {
+        font-size: 14px;
+    }
 
-.job .job-member .card-member h5 {
-    font-size: 28px;
-}
+    .job .job-member .card-member h5 {
+        font-size: 28px;
+    }
 
-.job .job-member .card-member .card-member-name {
-    max-width: 50%;
-    padding-top: 50px;
-    padding-bottom: 12px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-}
+    .job .job-member .card-member .card-member-name {
+        max-width: 50%;
+        padding-top: 50px;
+        padding-bottom: 12px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+    }
 
-.job .job-member .card-member .card-member-bio {
-    font-size: 14px;
-}
+    .job .job-member .card-member .card-member-bio {
+        font-size: 14px;
+    }
 
-.job .job-member {
-    margin-bottom: 40px;
-}
+    .job .job-member {
+        margin-bottom: 40px;
+    }
 
 }
 
 @media screen and (max-width: 600px) {
-.job .job-recruitment .job-recruitment__title {
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 16px;
+    .job .job-recruitment .job-recruitment__title {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 16px;
+    }
+
+    .job .job-recruitment .job-recruitment__title a {
+        display: flex;
+        align-items: center;
+    }
+
+    .job .job-recruitment .job-recruitment__box-right {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
-.job .job-recruitment .job-recruitment__title a {
-    display: flex;
-    align-items: center;
-}
-
-.job .job-recruitment .job-recruitment__box-right {
-    grid-template-columns: repeat(1, 1fr);
-}
-}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
 
